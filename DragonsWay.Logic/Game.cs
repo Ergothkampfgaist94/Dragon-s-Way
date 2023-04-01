@@ -14,7 +14,7 @@
             Way = way;
             _deathscavern = new char[N,M];//row,columns
             Bilddeathscavern();
-            Wayreader(Way);
+            //Wayreader(Way);
         }
 
         /*private void Wayreader(string way)
