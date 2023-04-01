@@ -14,7 +14,22 @@
             Way = way;
             _deathscavern = new char[N,M];//row,columns
             Bilddeathscavern();
+            Wayreader(Way);
         }
+
+        /*private void Wayreader(string way)
+        { 
+            for (int i = 0; i < way.Length; i++)
+            {
+                for (int j = 0; j < length; j++)
+                {
+                    if (way[i] == '→')
+                    {
+                        _deathscavern[i, j] = '→';
+                    }
+                }
+            }
+        }*/
 
         private void Bilddeathscavern()
         {
