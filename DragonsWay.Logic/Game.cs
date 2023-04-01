@@ -51,11 +51,13 @@
             var output = string.Empty;
             for (int i = 0; i < N; i++)//rows
             {
-                for (int j = 0; j < M; j++)//columns
+                output += $"{i}";
+                for (int j = 0; j < M; j++)//
                 {
+                    output += $"{j}";
                     output += $"{_deathscavern[i, j]}";
                 }
-                output += "\n";
+                output += $"\n";
             }
             return output;
         }
