@@ -52,9 +52,9 @@
             for (int i = 0; i < N; i++)//rows
             {
                 output += $"{i}";
-                for (int j = 0; j < M; j++)//
+                for (int j = 0; j < M; j++)
                 {
-                    output += $"{j}";
+                    //output += $"{j}";
                     output += $"{_deathscavern[i, j]}";
                 }
                 output += $"\n";
