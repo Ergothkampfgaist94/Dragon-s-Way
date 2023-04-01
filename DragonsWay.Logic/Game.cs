@@ -13,10 +13,10 @@
             M = n * 2;
             Way = way;
             _deathscavern = new char[N,M];//row,columns
-            bilddeathscavern();
+            Bilddeathscavern();
         }
 
-        private void bilddeathscavern()
+        private void Bilddeathscavern()
         {
             {
                 for (int i = 0; i < M; i++)
@@ -25,20 +25,24 @@
                 }
                 for (int i = 0; i < M; i++)
                 {
-                    _deathscavern[1, i] = '█';//second row
-                }
-                for (int i = 0; i < M-1; i++)
+                    _deathscavern[N-1, i] = '█';//lAST ROW
+                }                
+                for (int j = 1; j < N; j++)// first column
                 {
-                    _deathscavern[1, i] = ' ';//gap second row
+                    _deathscavern[j, 0] = '█';
                 }
-                for (int i = 2; i < N; i++)
+                _deathscavern[2, 0] = ' ';//gap second row
+                for (int j = 1; j < N-3; j++)// LAST COLUMN
                 {
-                    _deathscavern[i, 0] = '█';//FIRST COLUMN
-                    for (int j = 1; j < N; j++)
+                    _deathscavern[j, M-1] = '█';
+                }
+                _deathscavern[N-2, M-1] = '█';
+                for (int i = 1; i < N-1; i++)
+                {
+                    for (int j = 1; j < M-1; j++)
                     {
-                        _deathscavern[1, i] = ' ';
+                        _deathscavern[i,j] = ' ';
                     }
-                    _deathscavern[i, M-1] = '█';
                 }
             }
         }
